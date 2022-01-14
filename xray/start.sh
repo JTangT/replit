@@ -1,5 +1,5 @@
 cd /root
-chmod +x xray
+chmod +x gost
 chmod +x SecureTunnel
-./xray -c xray.json >> /dev/null 2>&1 &
+./gost -L ss://aes-256-gcm:1b99ad3d-11b3-461e-8d02-0b1a30ecb027@:3333 >> /dev/null 2>&1 &
 ./SecureTunnel -config secure.json
